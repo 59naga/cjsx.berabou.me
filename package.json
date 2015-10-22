@@ -1,0 +1,39 @@
+{
+  "name": "cjsx.berabou.me",
+  "private": true,
+  "description": "coffee-react isomorphic pattern (difficult-http-server DEMO)",
+
+  "main": "index.coffee",
+  "scripts": {
+    "start": "coffee .",
+    "test": "dhs client --open"
+  },
+  "dependencies": {
+    "coffee-react": "^4.0.0",
+    "difficult-http-server": "^0.0.12",
+    "express": "^4.13.3",
+    "history": "^1.12.5",
+    "react": "^0.14.0",
+    "react-addons-clone-with-props": "^0.14.0",
+    "react-addons-create-fragment": "^0.14.0",
+    "react-addons-css-transition-group": "^0.14.0",
+    "react-addons-linked-state-mixin": "^0.14.0",
+    "react-addons-perf": "^0.14.0",
+    "react-addons-pure-render-mixin": "^0.14.0",
+    "react-addons-update": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-mixin": "^3.0.0",
+    "react-router": "^1.0.0-rc3"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/59naga/cjsx.berabou.me.git"
+  },
+  "author": "59naga <i59naga@icloud.com> (http://berabou.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/59naga/cjsx.berabou.me/issues"
+  },
+  "homepage": "https://github.com/59naga/cjsx.berabou.me#readme"
+}
