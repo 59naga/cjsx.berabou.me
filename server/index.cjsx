@@ -9,6 +9,7 @@ match= (require 'react-router').match
 React= require 'react'
 ReactDOMServer= require 'react-dom/server'
 RoutingContext= (require 'react-router').RoutingContext
+jade= require 'jade'
 
 # Environment
 process.env.PORT?= 59798
@@ -27,7 +28,8 @@ app.use (req,res,next)->
     return res.status(500).send error.message if error
     return res.status(404).send '404 Notfound' unless renderProps
 
-    res.send ReactDOMServer.renderToStaticMarkup <RoutingContext {...renderProps} />
+    main= ReactDOMServer.renderToStaticMarkup <RoutingContext {...renderProps} />
+    res.send jade.renderFile cwd+path.sep+'index.jade',{main}
 
 app.use dhs {cwd,html5Mode:yes}
 
